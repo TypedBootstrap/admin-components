@@ -1,38 +1,25 @@
 import React from 'react';
-import classnames from 'classnames';
-import { LayoutSidenav, LayoutSidenavContent, LayoutSidenavNav } from '../../atoms';
+import {
+    LayoutSidenav,
+    LayoutSidenavContent,
+    LayoutSidenavNav,
+    Wrapper,
+    WrapperProps
+} from '../../atoms';
 
-export interface DefaultLayoutProps
-    extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
-    fixedNav?: boolean;
+export interface DefaultLayoutProps extends WrapperProps {
     footer: React.ReactNode;
+    navFixed?: boolean;
     sidenav: React.ReactNode;
     sidenavToggled?: boolean;
     topnav: React.ReactNode;
 }
 
 const DefaultLayout: React.FC<DefaultLayoutProps> = props => {
-    const {
-        children,
-        className,
-        fixedNav,
-        footer,
-        sidenav,
-        sidenavToggled,
-        topnav,
-        ...rest
-    } = props;
-
-    const classNames: string = classnames(
-        {
-            'sb-nav-fixed': fixedNav,
-            'sb-sidenav-toggled': sidenavToggled
-        },
-        className
-    );
+    const { children, footer, sidenav, topnav, ...rest } = props;
 
     return (
-        <div className={classNames} {...rest}>
+        <Wrapper {...rest}>
             {topnav}
             <LayoutSidenav>
                 <LayoutSidenavNav>{sidenav}</LayoutSidenavNav>
@@ -41,7 +28,7 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = props => {
                     {footer}
                 </LayoutSidenavContent>
             </LayoutSidenav>
-        </div>
+        </Wrapper>
     );
 };
 
