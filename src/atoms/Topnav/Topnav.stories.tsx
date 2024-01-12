@@ -1,12 +1,12 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { Topnav } from '..';
+import Topnav from './Topnav';
 
-const meta = {
+const meta: Meta<typeof Topnav> = {
     title: 'Atoms/Topnav',
     component: Topnav,
     tags: ['autodocs']
-} satisfies Meta<typeof Topnav>;
+};
 
 export default meta;
 
@@ -21,7 +21,9 @@ export const Example: Story = {
     render: args => (
         <Topnav bg={args.bg} dark={args.dark} light={args.light}>
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">Navbar</a>
+                <a className="navbar-brand" href="#">
+                    Navbar
+                </a>
             </div>
         </Topnav>
     )

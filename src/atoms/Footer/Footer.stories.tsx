@@ -1,12 +1,12 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { Footer } from '..';
+import Footer from './Footer';
 
-const meta = {
+const meta: Meta<typeof Footer> = {
     title: 'Atoms/Footer',
     component: Footer,
     tags: ['autodocs']
-} satisfies Meta<typeof Footer>;
+};
 
 export default meta;
 

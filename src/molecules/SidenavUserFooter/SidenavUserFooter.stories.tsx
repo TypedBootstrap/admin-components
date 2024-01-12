@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import { Sidenav, SidenavMenu } from '../../atoms';
 import SidenavUserFooter from './SidenavUserFooter';
 
-const meta = {
+const meta: Meta<typeof SidenavUserFooter> = {
     title: 'Molecules/SidenavUserFooter',
     component: SidenavUserFooter,
     decorators: [
@@ -16,7 +16,7 @@ const meta = {
         )
     ],
     tags: ['autodocs']
-} satisfies Meta<typeof SidenavUserFooter>;
+};
 
 export default meta;
 
@@ -26,5 +26,5 @@ export const Example: Story = {
     args: {
         name: 'Andrew Dyer'
     },
-    render: (args) => <SidenavUserFooter {...args} />
+    render: args => <SidenavUserFooter {...args} />
 };
