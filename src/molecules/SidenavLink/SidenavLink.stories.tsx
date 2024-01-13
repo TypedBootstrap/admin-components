@@ -24,7 +24,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Example: Story = {
     args: {},
-    render: () => (
+    render: args => (
         <SidenavLink href="#" icon={<i className="fas fa-tachometer-alt"></i>}>
             Dashboard
         </SidenavLink>
