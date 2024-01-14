@@ -1,2 +1,2 @@
 export * from './SidenavMenu';
-export { default as SidenavMenu } from './SidenavMenu';
+export { default } from './SidenavMenu';

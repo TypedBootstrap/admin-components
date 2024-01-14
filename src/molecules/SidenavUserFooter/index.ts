@@ -1,2 +1,2 @@
 export * from './SidenavUserFooter';
-export { default as SidenavUserFooter } from './SidenavUserFooter';
+export { default } from './SidenavUserFooter';

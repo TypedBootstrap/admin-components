@@ -1,2 +1,2 @@
 export * from './Topnav';
-export { default as Topnav } from './Topnav';
+export { default } from './Topnav';

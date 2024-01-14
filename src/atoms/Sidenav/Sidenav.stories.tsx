@@ -1,11 +1,11 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { NavLinkIcon } from '../NavLinkIcon';
-import { SidenavCollapseArrow } from '../SidenavCollapseArrow';
-import { SidenavFooter } from '../SidenavFooter';
-import { SidenavMenu } from '../SidenavMenu';
-import { SidenavMenuHeading } from '../SidenavMenuHeading';
-import { SidenavMenuNested } from '../SidenavMenuNested';
+import NavLinkIcon from '../NavLinkIcon';
+import SidenavCollapseArrow from '../SidenavCollapseArrow';
+import SidenavFooter from '../SidenavFooter';
+import SidenavMenu from '../SidenavMenu';
+import SidenavMenuHeading from '../SidenavMenuHeading';
+import SidenavMenuNested from '../SidenavMenuNested';
 import Sidenav from './Sidenav';
 
 const meta: Meta<typeof Sidenav> = {
