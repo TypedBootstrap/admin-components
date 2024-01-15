@@ -29,6 +29,24 @@ export const Example: Story = {
                 icon: <i className="fas fa-tachometer-alt"></i>
             },
             {
+                heading: 'Interface'
+            },
+            {
+                name: 'Layouts',
+                href: '#',
+                icon: <i className="fas fa-columns"></i>,
+                submenu: [
+                    {
+                        name: 'Static Navigation',
+                        href: '/layout-static'
+                    },
+                    {
+                        name: 'Light Sidenav',
+                        href: '/layout-sidenav-light'
+                    }
+                ]
+            },
+            {
                 name: 'Pages',
                 href: '#',
                 icon: <i className="fas fa-book-open"></i>,
