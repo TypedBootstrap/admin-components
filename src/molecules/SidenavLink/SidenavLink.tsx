@@ -1,27 +1,19 @@
 import React from 'react';
-import classnames from 'classnames';
+import { NavLink, NavLinkProps } from 'reactstrap';
 import { NavLinkIcon } from '../../atoms';
 
-export interface SidenavLinkProps
-    extends React.DetailedHTMLProps<
-        React.AnchorHTMLAttributes<HTMLAnchorElement>,
-        HTMLAnchorElement
-    > {
-    children?: React.ReactNode;
+export interface SidenavLinkProps extends NavLinkProps {
     icon?: React.ReactNode;
-    tag?: React.ElementType;
 }
 
 const SidenavLink: React.FC<SidenavLinkProps> = props => {
-    const { tag: Tag = 'a', children, className, icon, ...rest } = props;
-
-    const classNames: string = classnames('nav-link', className);
+    const { children, icon, ...rest } = props;
 
     return (
-        <Tag className={classNames} {...rest}>
+        <NavLink {...rest}>
             {icon && <NavLinkIcon>{icon}</NavLinkIcon>}
             {children}
-        </Tag>
+        </NavLink>
     );
 };
 

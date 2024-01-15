@@ -23,9 +23,11 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Example: Story = {
-    args: {},
+    args: {
+        active: false
+    },
     render: args => (
-        <SidenavLink href="#" icon={<i className="fas fa-tachometer-alt"></i>}>
+        <SidenavLink href="#" icon={<i className="fas fa-tachometer-alt"></i>} {...args}>
             Dashboard
         </SidenavLink>
     )
