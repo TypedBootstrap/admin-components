@@ -16,9 +16,9 @@ type Story = StoryObj<typeof meta>;
 
 export const Example: Story = {
     args: {
-        footer: <SidenavUserFooter name="Andrew Dyer" />,
-        color: 'dark',
         dark: true,
+        light: false,
+        footer: <SidenavUserFooter name="Andrew Dyer" />,
         items: [
             {
                 heading: 'Core'
@@ -84,8 +84,7 @@ export const Example: Story = {
                 href: '/tables',
                 icon: <i className="fas fa-table"></i>
             }
-        ],
-        light: false
+        ]
     },
     render: args => <SidenavNavigation {...args} />
 };
