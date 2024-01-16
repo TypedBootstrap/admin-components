@@ -1,3 +1,7 @@
+// Authentication Layout
+export * from './AuthenticationLayout';
+export { default as AuthenticationLayout } from './AuthenticationLayout';
+
 // Default Layout
 export * from './DefaultLayout';
 export { default as DefaultLayout } from './DefaultLayout';

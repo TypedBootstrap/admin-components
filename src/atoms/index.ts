@@ -2,6 +2,18 @@
 export * from './Footer';
 export { default as Footer } from './Footer';
 
+// Layout Authentication
+export * from './LayoutAuthentication';
+export { default as LayoutAuthentication } from './LayoutAuthentication';
+
+// Layout Authentication Content
+export * from './LayoutAuthenticationContent';
+export { default as LayoutAuthenticationContent } from './LayoutAuthenticationContent';
+
+// Layout Authentication Footer
+export * from './LayoutAuthenticationFooter';
+export { default as LayoutAuthenticationFooter } from './LayoutAuthenticationFooter';
+
 // Layout Error
 export * from './LayoutError';
 export { default as LayoutError } from './LayoutError';
