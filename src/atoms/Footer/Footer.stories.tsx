@@ -16,5 +16,5 @@ export const Example: Story = {
     args: {
         bg: undefined
     },
-    render: args => <Footer bg={args.bg}>Footer</Footer>
+    render: args => <Footer {...args}>Footer</Footer>
 };
