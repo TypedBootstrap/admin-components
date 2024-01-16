@@ -2,6 +2,18 @@
 export * from './Footer';
 export { default as Footer } from './Footer';
 
+// Layout Error
+export * from './LayoutError';
+export { default as LayoutError } from './LayoutError';
+
+// Layout Error Content
+export * from './LayoutErrorContent';
+export { default as LayoutErrorContent } from './LayoutErrorContent';
+
+// Layout Error Footer
+export * from './LayoutErrorFooter';
+export { default as LayoutErrorFooter } from './LayoutErrorFooter';
+
 // Layout Sidenav
 export * from './LayoutSidenav';
 export { default as LayoutSidenav } from './LayoutSidenav';
