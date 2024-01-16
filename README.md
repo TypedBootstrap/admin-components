@@ -2,6 +2,9 @@
 
 A collection of reusable React components for creating admin interfaces.
 
+## License
+Licensed under MIT. Totally free for private or commercial projects.
+
 ## Getting Started
 
 ```bash
