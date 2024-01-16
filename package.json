@@ -1,7 +1,7 @@
 {
     "name": "@typedbootstrap/admin-components",
     "description": "A collection of reusable React components for creating admin dashboard interfaces",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "license": "MIT",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
