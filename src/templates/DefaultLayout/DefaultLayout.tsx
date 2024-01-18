@@ -7,12 +7,13 @@ import {
     WrapperProps
 } from '../../atoms';
 
-export interface DefaultLayoutProps extends WrapperProps {
+export interface DefaultLayoutProps {
+    children?: React.ReactNode;
     footer: React.ReactNode;
-    navFixed?: boolean;
     sidenav: React.ReactNode;
     sidenavToggled?: boolean;
     topnav: React.ReactNode;
+    topnavFixed?: boolean;
 }
 
 const DefaultLayout: React.FC<DefaultLayoutProps> = props => {
