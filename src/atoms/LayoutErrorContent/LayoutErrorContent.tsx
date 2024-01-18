@@ -9,7 +9,7 @@ const LayoutErrorContent: React.FC<LayoutErrorContentProps> = props => {
 
     const classNames: string = classnames(className);
 
-    return <div id="layoutError_content" className={classNames} {...rest} />;
+    return <div id="layout-error-content" className={classNames} {...rest} />;
 };
 
 export default LayoutErrorContent;

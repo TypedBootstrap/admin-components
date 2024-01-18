@@ -9,7 +9,7 @@ const LayoutAuthentication: React.FC<LayoutAuthenticationProps> = props => {
 
     const classNames: string = classnames(className);
 
-    return <div id="layoutAuthentication" className={classNames} {...rest} />;
+    return <div id="layout-authentication" className={classNames} {...rest} />;
 };
 
 export default LayoutAuthentication;

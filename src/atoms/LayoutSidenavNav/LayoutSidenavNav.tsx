@@ -9,7 +9,7 @@ const LayoutSidenavNav: React.FC<LayoutSidenavNavProps> = props => {
 
     const classNames: string = classnames(className);
 
-    return <div id="layoutSidenav_nav" className={classNames} {...rest} />;
+    return <div id="layout-sidenav-nav" className={classNames} {...rest} />;
 };
 
 export default LayoutSidenavNav;
