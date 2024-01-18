@@ -12,8 +12,8 @@ const Wrapper: React.FC<WrapperProps> = props => {
 
     const classNames: string = classnames(
         {
-            'sb-nav-fixed': navFixed,
-            'sb-sidenav-toggled': sidenavToggled
+            'nav-fixed': navFixed,
+            'sidenav-toggled': sidenavToggled
         },
         className
     );

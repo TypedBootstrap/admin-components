@@ -7,7 +7,7 @@ export interface SidenavMenuProps
 const SidenavMenu: React.FC<SidenavMenuProps> = props => {
     const { className, children, ...rest } = props;
 
-    const classNames: string = classnames('sb-sidenav-menu', className);
+    const classNames: string = classnames('sidenav-menu', className);
 
     return (
         <div className={classNames} {...rest}>

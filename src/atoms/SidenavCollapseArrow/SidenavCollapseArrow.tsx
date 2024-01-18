@@ -7,7 +7,7 @@ export interface SidenavCollapseArrowProps
 const SidenavCollapseArrow: React.FC<SidenavCollapseArrowProps> = props => {
     const { className, ...rest } = props;
 
-    const classNames: string = classnames('sb-sidenav-collapse-arrow', className);
+    const classNames: string = classnames('sidenav-collapse-arrow', className);
 
     return <div className={classNames} {...rest} />;
 };

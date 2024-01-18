@@ -12,7 +12,7 @@ const Topnav: React.FC<TopnavProps> = props => {
     const { bg, className, dark, light, ...rest } = props;
 
     const classNames: string = classnames(
-        'sb-topnav',
+        'topnav',
         'navbar',
         'navbar-expand',
         {

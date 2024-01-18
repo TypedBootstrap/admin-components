@@ -7,7 +7,7 @@ export interface SidenavFooterProps
 const SidenavFooter: React.FC<SidenavFooterProps> = props => {
     const { className, ...rest } = props;
 
-    const classNames: string = classnames('sb-sidenav-footer', className);
+    const classNames: string = classnames('sidenav-footer', className);
 
     return <div className={classNames} {...rest} />;
 };

@@ -7,7 +7,7 @@ export interface SidenavMenuNestedProps
 const SidenavMenuNested: React.FC<SidenavMenuNestedProps> = props => {
     const { className, ...rest } = props;
 
-    const classNames: string = classnames('sb-sidenav-menu-nested', 'nav', className);
+    const classNames: string = classnames('sidenav-menu-nested', 'nav', className);
 
     return <nav className={classNames} {...rest} />;
 };
