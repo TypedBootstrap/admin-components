@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import DefaultLayout from './DefaultLayout';
+import DashboardLayout from './DashboardLayout';
 
-describe('DefaultLayout', () => {
+describe('DashboardLayout', () => {
     test('renders without crashing', () => {
         render(
-            <DefaultLayout
+            <DashboardLayout
                 topnav={<div>Topnav</div>}
                 sidenav={<div>Sidenav</div>}
                 footer={<div>Footer</div>}

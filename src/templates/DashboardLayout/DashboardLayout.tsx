@@ -3,8 +3,7 @@ import {
     LayoutSidenav,
     LayoutSidenavContent,
     LayoutSidenavNav,
-    Wrapper,
-    WrapperProps
+    Wrapper
 } from '../../atoms';
 
 export interface DefaultLayoutProps {
@@ -16,7 +15,7 @@ export interface DefaultLayoutProps {
     topnavFixed?: boolean;
 }
 
-const DefaultLayout: React.FC<DefaultLayoutProps> = props => {
+const DashboardLayout: React.FC<DefaultLayoutProps> = props => {
     const { children, footer, sidenav, topnav, ...rest } = props;
 
     return (
@@ -33,4 +32,4 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = props => {
     );
 };
 
-export default DefaultLayout;
+export default DashboardLayout;
