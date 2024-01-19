@@ -9,7 +9,7 @@ const LayoutAuthenticationFooter: React.FC<LayoutAuthenticationFooterProps> = pr
 
     const classNames: string = classnames(className);
 
-    return <div id="layoutAuthentication_footer" className={classNames} {...rest} />;
+    return <div id="layout-authentication-footer" className={classNames} {...rest} />;
 };
 
 export default LayoutAuthenticationFooter;

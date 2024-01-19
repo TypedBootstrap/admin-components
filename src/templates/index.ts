@@ -2,9 +2,9 @@
 export * from './AuthenticationLayout';
 export { default as AuthenticationLayout } from './AuthenticationLayout';
 
-// Default Layout
-export * from './DefaultLayout';
-export { default as DefaultLayout } from './DefaultLayout';
+// Dashboard Layout
+export * from './DashboardLayout';
+export { default as DashboardLayout } from './DashboardLayout';
 
 // Error Layout
 export * from './ErrorLayout';

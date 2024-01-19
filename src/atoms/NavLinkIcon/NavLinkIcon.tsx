@@ -7,7 +7,7 @@ export interface NavLinkIconProps
 const NavLinkIcon: React.FC<NavLinkIconProps> = props => {
     const { className, ...rest } = props;
 
-    const classNames: string = classnames('sb-nav-link-icon', className);
+    const classNames: string = classnames('nav-link-icon', className);
 
     return <div className={classNames} {...rest} />;
 };

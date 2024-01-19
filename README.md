@@ -22,16 +22,16 @@ import '@typedbootstrap/admin-styles/dist/css/styles.css';
 
 ```tsx
 import React from 'react';
-import { DefaultLayout } from '@typedbootstrap/admin-components';
+import { DashboardLayout } from '@typedbootstrap/admin-components';
 
 export default (props) => {
     return ( 
-        <DefaultLayout
+        <DashboardLayout
             topnav={<div>Topnav</div>}
             sidenav={<div>Sidenav</div>}
             footer={<div>Topnav</div>}>
             Hello world!
-        </DefaultLayout>
+        </DashboardLayout>
     );
 };
 ```

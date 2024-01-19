@@ -3,19 +3,19 @@ import {
     LayoutSidenav,
     LayoutSidenavContent,
     LayoutSidenavNav,
-    Wrapper,
-    WrapperProps
+    Wrapper
 } from '../../atoms';
 
-export interface DefaultLayoutProps extends WrapperProps {
+export interface DefaultLayoutProps {
+    children?: React.ReactNode;
     footer: React.ReactNode;
-    navFixed?: boolean;
     sidenav: React.ReactNode;
     sidenavToggled?: boolean;
     topnav: React.ReactNode;
+    topnavFixed?: boolean;
 }
 
-const DefaultLayout: React.FC<DefaultLayoutProps> = props => {
+const DashboardLayout: React.FC<DefaultLayoutProps> = props => {
     const { children, footer, sidenav, topnav, ...rest } = props;
 
     return (
@@ -32,4 +32,4 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = props => {
     );
 };
 
-export default DefaultLayout;
+export default DashboardLayout;

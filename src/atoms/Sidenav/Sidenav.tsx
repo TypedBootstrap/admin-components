@@ -11,10 +11,10 @@ const Sidenav: React.FC<SidenavProps> = props => {
     const { className, dark, light, ...rest } = props;
 
     const classNames: string = classnames(
-        'sb-sidenav',
+        'sidenav',
         {
-            'sb-sidenav-dark': dark,
-            'sb-sidenav-light': light
+            'sidenav-dark': dark,
+            'sidenav-light': light
         },
         className
     );

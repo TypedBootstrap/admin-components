@@ -3,17 +3,17 @@ import classnames from 'classnames';
 
 export interface WrapperProps
     extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
-    navFixed?: boolean;
     sidenavToggled?: boolean;
+    topnavFixed?: boolean;
 }
 
 const Wrapper: React.FC<WrapperProps> = props => {
-    const { className, navFixed, sidenavToggled, ...rest } = props;
+    const { className, topnavFixed, sidenavToggled, ...rest } = props;
 
     const classNames: string = classnames(
         {
-            'sb-nav-fixed': navFixed,
-            'sb-sidenav-toggled': sidenavToggled
+            'topnav-fixed': topnavFixed,
+            'sidenav-toggled': sidenavToggled
         },
         className
     );

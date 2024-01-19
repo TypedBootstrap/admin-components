@@ -9,7 +9,7 @@ const LayoutErrorFooter: React.FC<LayoutErrorFooterProps> = props => {
 
     const classNames: string = classnames(className);
 
-    return <div id="layoutError_footer" className={classNames} {...rest} />;
+    return <div id="layout-error-footer" className={classNames} {...rest} />;
 };
 
 export default LayoutErrorFooter;
