@@ -29,7 +29,7 @@ export default (props) => {
         <DashboardLayout
             topnav={<div>Topnav</div>}
             sidenav={<div>Sidenav</div>}
-            footer={<div>Topnav</div>}>
+            footer={<div>Footer</div>}>
             Hello world!
         </DashboardLayout>
     );
